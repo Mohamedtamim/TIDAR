@@ -1,0 +1,6 @@
+Sample program inspection report:
+- The program opens a text file.
+- There is no malicious activity or network connections.
+- All processes and files were checked; no threats found.
+- The purpose of this report is to teach the model how to suggest simple actions.
+

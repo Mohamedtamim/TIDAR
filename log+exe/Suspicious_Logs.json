@@ -1,0 +1,14 @@
+[
+  {
+    "event_id": "4521",
+    "timestamp": "2025-12-07T14:22:51Z",
+    "source_ip": "192.168.1.45",
+    "destination_ip": "10.0.0.5",
+    "severity": "high",
+    "description": "Suspicious executable detected. Possible malware dropper.",
+    "file_path": "/home/godfather/Desktop/log+exe/tamem.exe",
+    "hash": "5fe6a29e307b48fe787700e4b32ae36e",
+    "process_name": "unknown.exe",
+    "behavior": ["file_write", "network_connection", "persistence_attempt"]
+  }
+]

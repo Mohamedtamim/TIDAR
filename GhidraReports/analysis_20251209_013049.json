@@ -1,0 +1,474 @@
+{
+  "imports": [], 
+  "functions": [
+    {
+      "address": "00102000", 
+      "signature": "int __stdcall _init(EVP_PKEY_CTX * ctx)", 
+      "name": "_init"
+    }, 
+    {
+      "address": "00102020", 
+      "signature": "undefined FUN_00102020(void)", 
+      "name": "FUN_00102020"
+    }, 
+    {
+      "address": "00102030", 
+      "signature": "undefined __throw_bad_alloc(void)", 
+      "name": "__throw_bad_alloc"
+    }, 
+    {
+      "address": "00102040", 
+      "signature": "size_t strlen(char * __s)", 
+      "name": "strlen"
+    }, 
+    {
+      "address": "00102050", 
+      "signature": "int memcmp(void * __s1, void * __s2, size_t __n)", 
+      "name": "memcmp"
+    }, 
+    {
+      "address": "00102060", 
+      "signature": "undefined __throw_length_error(char * param_1)", 
+      "name": "__throw_length_error"
+    }, 
+    {
+      "address": "00102070", 
+      "signature": "undefined __throw_logic_error(char * param_1)", 
+      "name": "__throw_logic_error"
+    }, 
+    {
+      "address": "00102080", 
+      "signature": "void * memcpy(void * __dest, void * __src, size_t __n)", 
+      "name": "memcpy"
+    }, 
+    {
+      "address": "00102090", 
+      "signature": "ostream * operator<<(ostream * param_1, string * param_2)", 
+      "name": "operator<<"
+    }, 
+    {
+      "address": "001020a0", 
+      "signature": "ostream * operator<<(ostream * param_1, char * param_2)", 
+      "name": "operator<<"
+    }, 
+    {
+      "address": "001020b0", 
+      "signature": "void * operator.new(ulong param_1)", 
+      "name": "operator.new"
+    }, 
+    {
+      "address": "001020c0", 
+      "signature": "void operator.delete(void * param_1, ulong param_2)", 
+      "name": "operator.delete"
+    }, 
+    {
+      "address": "001020d0", 
+      "signature": "undefined __thiscall operator<<(ostream * this, _func_ostream_ptr_ostream_ptr * param_1)", 
+      "name": "operator<<"
+    }, 
+    {
+      "address": "001020e0", 
+      "signature": "noreturn undefined _Unwind_Resume(void)", 
+      "name": "_Unwind_Resume"
+    }, 
+    {
+      "address": "001020f0", 
+      "signature": "undefined __cxa_finalize(void)", 
+      "name": "__cxa_finalize"
+    }, 
+    {
+      "address": "00102100", 
+      "signature": "undefined processEntry _start(void)", 
+      "name": "_start"
+    }, 
+    {
+      "address": "00102130", 
+      "signature": "undefined deregister_tm_clones(void)", 
+      "name": "deregister_tm_clones"
+    }, 
+    {
+      "address": "00102160", 
+      "signature": "undefined register_tm_clones(void)", 
+      "name": "register_tm_clones"
+    }, 
+    {
+      "address": "001021a0", 
+      "signature": "undefined __do_global_dtors_aux(void)", 
+      "name": "__do_global_dtors_aux"
+    }, 
+    {
+      "address": "001021e0", 
+      "signature": "undefined frame_dummy(void)", 
+      "name": "frame_dummy"
+    }, 
+    {
+      "address": "001021e9", 
+      "signature": "undefined __stdcall pass_right(string param_1)", 
+      "name": "pass_right"
+    }, 
+    {
+      "address": "0010227b", 
+      "signature": "undefined main(void)", 
+      "name": "main"
+    }, 
+    {
+      "address": "001025b8", 
+      "signature": "undefined __stdcall assign(char * param_1, char * param_2)", 
+      "name": "assign"
+    }, 
+    {
+      "address": "001025d4", 
+      "signature": "undefined __stdcall lt(char * param_1, char * param_2)", 
+      "name": "lt"
+    }, 
+    {
+      "address": "001025f7", 
+      "signature": "undefined __stdcall compare(char * param_1, char * param_2, ulong param_3)", 
+      "name": "compare"
+    }, 
+    {
+      "address": "001026b7", 
+      "signature": "undefined __stdcall length(char * param_1)", 
+      "name": "length"
+    }, 
+    {
+      "address": "001026e9", 
+      "signature": "undefined __stdcall copy(char * param_1, char * param_2, ulong param_3)", 
+      "name": "copy"
+    }, 
+    {
+      "address": "0010272a", 
+      "signature": "undefined __stdcall length(char * param_1)", 
+      "name": "length"
+    }, 
+    {
+      "address": "00102770", 
+      "signature": "undefined __thiscall ~_Alloc_hider(_Alloc_hider * this)", 
+      "name": "~_Alloc_hider"
+    }, 
+    {
+      "address": "00102794", 
+      "signature": "undefined __thiscall ~string(string * this)", 
+      "name": "~string"
+    }, 
+    {
+      "address": "001027bc", 
+      "signature": "undefined __thiscall string<std::allocator<char>>(string * this, char * param_1, allocator * param_2)", 
+      "name": "string<std::allocator<char>>"
+    }, 
+    {
+      "address": "0010285c", 
+      "signature": "bool operator==(string * param_1, string * param_2)", 
+      "name": "operator=="
+    }, 
+    {
+      "address": "001028e0", 
+      "signature": "undefined __thiscall string(string * this, string * param_1)", 
+      "name": "string"
+    }, 
+    {
+      "address": "001029b1", 
+      "signature": "undefined __stdcall eq(char * param_1, char * param_2)", 
+      "name": "eq"
+    }, 
+    {
+      "address": "001029d2", 
+      "signature": "undefined __thiscall _M_data(string * this)", 
+      "name": "_M_data"
+    }, 
+    {
+      "address": "001029e4", 
+      "signature": "undefined __thiscall _M_local_data(string * this)", 
+      "name": "_M_local_data"
+    }, 
+    {
+      "address": "00102a02", 
+      "signature": "undefined __thiscall _Alloc_hider(_Alloc_hider * this, char * param_1, allocator * param_2)", 
+      "name": "_Alloc_hider"
+    }, 
+    {
+      "address": "00102a4a", 
+      "signature": "undefined __thiscall _M_set_length(string * this, ulong param_1)", 
+      "name": "_M_set_length"
+    }, 
+    {
+      "address": "00102a96", 
+      "signature": "undefined __thiscall _M_dispose(string * this)", 
+      "name": "_M_dispose"
+    }, 
+    {
+      "address": "00102ad0", 
+      "signature": "undefined __thiscall _M_get_allocator(string * this)", 
+      "name": "_M_get_allocator"
+    }, 
+    {
+      "address": "00102ade", 
+      "signature": "undefined __thiscall _M_is_local(string * this)", 
+      "name": "_M_is_local"
+    }, 
+    {
+      "address": "00102b2e", 
+      "signature": "undefined __thiscall length(string * this)", 
+      "name": "length"
+    }, 
+    {
+      "address": "00102b48", 
+      "signature": "undefined __thiscall _M_data(string * this, char * param_1)", 
+      "name": "_M_data"
+    }, 
+    {
+      "address": "00102b62", 
+      "signature": "undefined __thiscall _M_capacity(string * this, ulong param_1)", 
+      "name": "_M_capacity"
+    }, 
+    {
+      "address": "00102b7e", 
+      "signature": "undefined __thiscall _M_length(string * this, ulong param_1)", 
+      "name": "_M_length"
+    }, 
+    {
+      "address": "00102b9a", 
+      "signature": "undefined __thiscall data(string * this)", 
+      "name": "data"
+    }, 
+    {
+      "address": "00102bb4", 
+      "signature": "undefined __thiscall size(string * this)", 
+      "name": "size"
+    }, 
+    {
+      "address": "00102be8", 
+      "signature": "undefined __thiscall ~__new_allocator(__new_allocator<char> * this)", 
+      "name": "~__new_allocator"
+    }, 
+    {
+      "address": "00102bf4", 
+      "signature": "undefined __thiscall _Alloc_hider(_Alloc_hider * this, char * param_1, allocator * param_2)", 
+      "name": "_Alloc_hider"
+    }, 
+    {
+      "address": "00102c34", 
+      "signature": "undefined string*)(void)", 
+      "name": "string*)"
+    }, 
+    {
+      "address": "00102c4e", 
+      "signature": "undefined __thiscall ~_Guard(_Guard * this)", 
+      "name": "~_Guard"
+    }, 
+    {
+      "address": "00102c78", 
+      "signature": "void __stdcall _M_construct<char_const*>(char * param_1, char * param_2, forward_iterator_tag param_3)", 
+      "name": "_M_construct<char_const*>"
+    }, 
+    {
+      "address": "00102d6a", 
+      "signature": "undefined __thiscall _M_get_allocator(string * this)", 
+      "name": "_M_get_allocator"
+    }, 
+    {
+      "address": "00102d78", 
+      "signature": "void __thiscall _M_construct<true>(string * this, char * param_1, ulong param_2)", 
+      "name": "_M_construct<true>"
+    }, 
+    {
+      "address": "00102e22", 
+      "signature": "undefined __stdcall pointer_to(char * param_1)", 
+      "name": "pointer_to"
+    }, 
+    {
+      "address": "00102e42", 
+      "signature": "undefined __thiscall _M_destroy(string * this, ulong param_1)", 
+      "name": "_M_destroy"
+    }, 
+    {
+      "address": "00102ea6", 
+      "signature": "undefined __thiscall _M_create(string * this, ulong * param_1, ulong param_2)", 
+      "name": "_M_create"
+    }, 
+    {
+      "address": "00102f6e", 
+      "signature": "undefined __stdcall _S_copy(char * param_1, char * param_2, ulong param_3)", 
+      "name": "_S_copy"
+    }, 
+    {
+      "address": "00102fb8", 
+      "signature": "undefined __thiscall _M_local_data(string * this)", 
+      "name": "_M_local_data"
+    }, 
+    {
+      "address": "00102fd6", 
+      "signature": "ulong * min<unsigned_long>(ulong * param_1, ulong * param_2)", 
+      "name": "min<unsigned_long>"
+    }, 
+    {
+      "address": "00103002", 
+      "signature": "undefined __thiscall max_size(string * this)", 
+      "name": "max_size"
+    }, 
+    {
+      "address": "00103068", 
+      "signature": "void __stdcall _S_copy_chars<char_const*>(char * param_1, char * param_2, char * param_3)", 
+      "name": "_S_copy_chars<char_const*>"
+    }, 
+    {
+      "address": "001030a5", 
+      "signature": "undefined __stdcall _S_allocate(allocator * param_1, ulong param_2)", 
+      "name": "_S_allocate"
+    }, 
+    {
+      "address": "001030e8", 
+      "signature": "undefined __stdcall pointer_to(char * param_1)", 
+      "name": "pointer_to"
+    }, 
+    {
+      "address": "00103108", 
+      "signature": "undefined __thiscall deallocate(__new_allocator<char> * this, char * param_1, ulong param_2)", 
+      "name": "deallocate"
+    }, 
+    {
+      "address": "00103132", 
+      "signature": "undefined __stdcall allocate(ulong param_1, void * param_2)", 
+      "name": "allocate"
+    }, 
+    {
+      "address": "00103180", 
+      "signature": "undefined _fini(void)", 
+      "name": "_fini"
+    }, 
+    {
+      "address": "00107000", 
+      "signature": "undefined __throw_bad_alloc(void)", 
+      "name": "__throw_bad_alloc"
+    }, 
+    {
+      "address": "00107008", 
+      "signature": "size_t strlen(char * __s)", 
+      "name": "strlen"
+    }, 
+    {
+      "address": "00107010", 
+      "signature": "int memcmp(void * __s1, void * __s2, size_t __n)", 
+      "name": "memcmp"
+    }, 
+    {
+      "address": "00107018", 
+      "signature": "ostream * endl<char,std::char_traits<char>>(ostream * param_1)", 
+      "name": "endl<char,std::char_traits<char>>"
+    }, 
+    {
+      "address": "00107020", 
+      "signature": "undefined __throw_length_error(char * param_1)", 
+      "name": "__throw_length_error"
+    }, 
+    {
+      "address": "00107028", 
+      "signature": "undefined __throw_logic_error(char * param_1)", 
+      "name": "__throw_logic_error"
+    }, 
+    {
+      "address": "00107030", 
+      "signature": "undefined __libc_start_main(void)", 
+      "name": "__libc_start_main"
+    }, 
+    {
+      "address": "00107038", 
+      "signature": "void * memcpy(void * __dest, void * __src, size_t __n)", 
+      "name": "memcpy"
+    }, 
+    {
+      "address": "00107040", 
+      "signature": "ostream * operator<<(ostream * param_1, string * param_2)", 
+      "name": "operator<<"
+    }, 
+    {
+      "address": "00107048", 
+      "signature": "ostream * operator<<(ostream * param_1, char * param_2)", 
+      "name": "operator<<"
+    }, 
+    {
+      "address": "00107050", 
+      "signature": "void * operator.new(ulong param_1)", 
+      "name": "operator.new"
+    }, 
+    {
+      "address": "00107058", 
+      "signature": "void operator.delete(void * param_1, ulong param_2)", 
+      "name": "operator.delete"
+    }, 
+    {
+      "address": "00107060", 
+      "signature": "undefined __thiscall operator<<(ostream * this, _func_ostream_ptr_ostream_ptr * param_1)", 
+      "name": "operator<<"
+    }, 
+    {
+      "address": "00107068", 
+      "signature": "undefined ios_base_library_init(void)", 
+      "name": "ios_base_library_init"
+    }, 
+    {
+      "address": "00107070", 
+      "signature": "undefined __gxx_personality_v0(void)", 
+      "name": "__gxx_personality_v0"
+    }, 
+    {
+      "address": "00107078", 
+      "signature": "undefined _ITM_deregisterTMCloneTable(void)", 
+      "name": "_ITM_deregisterTMCloneTable"
+    }, 
+    {
+      "address": "00107080", 
+      "signature": "noreturn undefined _Unwind_Resume(void)", 
+      "name": "_Unwind_Resume"
+    }, 
+    {
+      "address": "00107088", 
+      "signature": "undefined __gmon_start__(void)", 
+      "name": "__gmon_start__"
+    }, 
+    {
+      "address": "00107090", 
+      "signature": "undefined _ITM_registerTMCloneTable(void)", 
+      "name": "_ITM_registerTMCloneTable"
+    }, 
+    {
+      "address": "00107098", 
+      "signature": "undefined __cxa_finalize(void)", 
+      "name": "__cxa_finalize"
+    }
+  ], 
+  "sections": [], 
+  "strings": [
+    {
+      "address": "00104013", 
+      "value": "Account-Unlocked"
+    }, 
+    {
+      "address": "00104024", 
+      "value": "Password is "
+    }, 
+    {
+      "address": "00104031", 
+      "value": "log failed "
+    }, 
+    {
+      "address": "00104040", 
+      "value": "basic_string: construction from null is not valid"
+    }, 
+    {
+      "address": "00104072", 
+      "value": "basic_string::_M_create"
+    }, 
+    {
+      "address": "00104351", 
+      "value": "zPLR"
+    }
+  ], 
+  "sample_path": "/home/godfather/Desktop/log+exe/tamem.exe", 
+  "errors": [
+    "Error extracting imports: 'ghidra.program.database.external.ExternalManagerDB' object has no attribute 'getExternalSymbols'", 
+    "Error extracting sections: 'ghidra.program.database.mem.MemoryBlockDB' object has no attribute 'getPermissions'"
+  ], 
+  "sample_name": "tamem.exe", 
+  "architecture": "x86:LE:64:default"
+}
