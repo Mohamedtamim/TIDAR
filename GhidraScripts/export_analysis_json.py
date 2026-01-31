@@ -6,7 +6,7 @@ from ghidra.util.task import ConsoleTaskMonitor
 from ghidra.program.model.listing import FunctionManager
 from ghidra.program.model.symbol import SourceType
 
-output_file = os.path.join(r'/home/godfather/Desktop/GhidraReports', 'analysis_20251209_013049.json')
+output_file = os.path.join(r'/home/godfather/Desktop/GhidraReports', 'analysis_20251210_160856.json')
 
 analysis_data = {
     "sample_name": currentProgram.getName(),
