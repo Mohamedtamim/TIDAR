@@ -1,0 +1,15 @@
+# ADDED FOR YAML PLAYBOOKS: Example playbook for high-severity alerts
+# Loaded in addition to config/soar_rules.yaml
+
+rules:
+  - name: high_alert_investigate
+    enabled: true
+    alert_level: [high]
+    action: investigate
+    command: 'powershell.exe -Command "Get-EventLog -LogName Security -Newest 10"'
+
+  - name: critical_immediate_block
+    enabled: true
+    alert_level: [critical]
+    action: block_ip
+    command: 'powershell.exe -Command "Add-NetFirewallRule -DisplayName SOAR-Block-{ip} -Direction Inbound -RemoteAddress {ip} -Action Block"'

@@ -1,0 +1,61 @@
+# SOAR Rules - Maps alert_level (and optional conditions) to response actions
+# Compatible with SSH execution layer. Actions are SSH commands.
+# Rules evaluated top-to-bottom; first match wins.
+# Place event_id-specific rules above generic rules for correct precedence.
+
+rules:
+  # --- EventID-specific (evaluated first) ---
+  - name: failed_logon_investigate
+    alert_level: [mid, high]
+    event_id: [4625]
+    action: investigate
+    command: 'powershell.exe -Command "Get-EventLog -LogName Security -Newest 5 -InstanceId 4625"'
+
+  - name: process_creation_investigate
+    alert_level: [mid]
+    event_id: [4688]
+    action: investigate
+    command: 'powershell.exe -Command "Get-Process powershell"'
+
+  # --- Critical: block IP, isolate host, or run immediate investigation ---
+#  - name: critical_block_ip
+#    alert_level: [critical]
+#    action: block_ip
+    # SSH command template: {ip} substituted
+#    command: 'powershell.exe -Command "Add-NetFirewallRule -DisplayName SOAR-Block-{ip} -Direction Inbound -RemoteAddress {ip} -Action Block"'
+
+#  - name: critical_isolate_host
+#    alert_level: [critical]
+#    action: isolate
+#    command: 'powershell.exe -Command "Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled True"'
+
+  - name: critical_investigate
+    alert_level: [critical]
+    action: investigate
+    command: 'powershell.exe -Command "Get-EventLog -LogName Security -Newest 10"'
+
+  # --- High: block IP or run investigation ---
+  - name: high_block_ip
+    alert_level: [high]
+    action: block_ip
+    command: 'powershell.exe -Command "Add-NetFirewallRule -DisplayName SOAR-Block-{ip} -Direction Inbound -RemoteAddress {ip} -Action Block"'
+
+  - name: high_investigate
+    alert_level: [high]
+    action: investigate
+    command: 'powershell.exe -Command "Get-Process powershell | Select-Object Id,ProcessName,StartTime"'
+
+  # --- Mid: run investigation only (no block) ---
+  - name: mid_investigate
+    alert_level: [mid]
+    action: investigate
+    command: 'powershell.exe -Command "Get-EventLog -LogName Security -Newest 5"'
+
+  # --- Low / informational: no action ---
+  - name: low_no_action
+    alert_level: [low]
+    action: no_action
+
+  - name: informational_no_action
+    alert_level: [informational]
+    action: no_action
